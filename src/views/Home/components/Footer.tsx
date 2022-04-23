@@ -16,8 +16,12 @@ const Wrapper = styled(Flex)`
   justify-content: center;
   overflow: hidden;
 `
- const Row = styled(Flex)`
-  
+ const TextLavel = styled.div`
+  font-family: Roboto Condensed;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  padding: 5px;
  `
  const SocialsBox = styled.div`
  .effect {
@@ -155,21 +159,21 @@ const Wrapper = styled(Flex)`
 }
 `
 
-const StyledColumn = styled(Flex)<{ noMobileBorder?: boolean }>`
+const Hero = styled.div`
+  align-items: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  ${({ noMobileBorder, theme }) =>
-    noMobileBorder
-      ? `${theme.mediaQueries.md} {
-           padding: 0 16px;
-           border-left: 1px ${theme.colors.inputSecondary} solid;
-         }
-       `
-      : `border-left: 1px ${theme.colors.inputSecondary} solid;
-         padding: 0 8px;
-         ${theme.mediaQueries.sm} {
-           padding: 0 16px;
-         }
-       `}
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  ${({ theme }) => theme.mediaQueries.sm} {
+    align-items: start;
+    text-align: start;
+  }
 `
 
 const Footer = () => {
@@ -178,19 +182,35 @@ const Footer = () => {
   const referlink = account ? `${BASE_URL}/?ref=${rot13(account)}` : `${BASE_URL}/?ref=`
   return (
     <>
-      <Grid alignContent="center">
-        <Text fontSize="20px" color="#fff">
-          Conditinos Apply
-        </Text>
-        <Grid>
-          <Text color="primary" fontSize="20px" >{t('Referral Levels')}</Text>
-          <Text color="textSubtle" mt="5px">Level 1 - 15%</Text>
-          <Text color="textSubtle" mt="2px">Level 2 - 10%</Text>
-          <Text color="textSubtle" mt="2px">Level 3 - 8%</Text>
-          <Text color="textSubtle" mt="2px">Level 4 - 5%</Text>
-          <Text color="textSubtle" mt="2px">Level 5 - 3%</Text>
-          
-        </Grid>
+      <Grid>
+        <Hero>
+          {/* <Image src="images/header.png" width={400} height={237}/> */}
+          <TextLavel style={{ fontSize: "28px", color: "white", margin: "auto" }}>
+            {t('Experimental Yield Farm on Binance Smart Chain')}
+          </TextLavel>
+          <TextLavel style={{ marginTop: "40px" }}>
+            {t('- 0.01 BNB Min Investment')}
+          </TextLavel>
+          <TextLavel>
+            {t('- 10% Daily rewards')}
+          </TextLavel>
+          <TextLavel>
+            {t('- 20 Day 200% ROI')}
+          </TextLavel>
+          <TextLavel>
+            {t('- 0.0035 BNB Minimum Withdrawal')}
+          </TextLavel>
+          <TextLavel>
+            {t('- Withdraw Anytime')}
+          </TextLavel>
+          <TextLavel>
+            {t('- 100% availability : 70% withdraw 30% auto reinvested for sustainability and anti whale functions')}
+          </TextLavel>
+          <TextLavel>
+            {t('- 3 BNB max withdrawal per transaction')}
+          </TextLavel>
+        </Hero>
+
         <Flex flexDirection="column">
           <Text color="primary" fontSize="20px" >{t('Referral Link')}</Text>
           <CopyAddress account={referlink} mt="5px" style={{width: "fit-content"}} color="textSubtle"/>
@@ -209,6 +229,9 @@ const Footer = () => {
             <Image src="/images/telegram.svg" width={24} height={24} />
           </a>
         </Flex>
+        <TextLavel style={{ fontSize: "20px", color: "white", margin: "auto" }}>
+            {t('© Copyright Diamond Staker . All Rights Reserved')}
+        </TextLavel>
       </Grid>
     </>
   )
