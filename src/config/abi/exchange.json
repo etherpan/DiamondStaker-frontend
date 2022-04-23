@@ -1,0 +1,319 @@
+[{
+	"anonymous": false,
+	"inputs": [{
+		"indexed": true,
+		"internalType": "address",
+		"name": "operator",
+		"type": "address"
+	}, {
+		"indexed": false,
+		"internalType": "uint256",
+		"name": "previousRate",
+		"type": "uint256"
+	}, {
+		"indexed": false,
+		"internalType": "uint256",
+		"name": "newRate",
+		"type": "uint256"
+	}],
+	"name": "AddedRateUpdated",
+	"type": "event"
+}, {
+	"anonymous": false,
+	"inputs": [{
+		"indexed": true,
+		"internalType": "address",
+		"name": "account",
+		"type": "address"
+	}, {
+		"indexed": false,
+		"internalType": "bool",
+		"name": "isAllowed",
+		"type": "bool"
+	}],
+	"name": "AllowAccount",
+	"type": "event"
+}, {
+	"anonymous": false,
+	"inputs": [{
+		"indexed": false,
+		"internalType": "address[]",
+		"name": "accounts",
+		"type": "address[]"
+	}, {
+		"indexed": false,
+		"internalType": "bool",
+		"name": "isAllowed",
+		"type": "bool"
+	}],
+	"name": "AllowMultipleAccounts",
+	"type": "event"
+}, {
+	"anonymous": false,
+	"inputs": [{
+		"indexed": true,
+		"internalType": "address",
+		"name": "operator",
+		"type": "address"
+	}, {
+		"indexed": false,
+		"internalType": "uint256",
+		"name": "previousPeriod",
+		"type": "uint256"
+	}, {
+		"indexed": false,
+		"internalType": "uint256",
+		"name": "newPeriod",
+		"type": "uint256"
+	}],
+	"name": "LimitTimeUpdated",
+	"type": "event"
+}, {
+	"anonymous": false,
+	"inputs": [{
+		"indexed": true,
+		"internalType": "address",
+		"name": "operator",
+		"type": "address"
+	}, {
+		"indexed": false,
+		"internalType": "uint256",
+		"name": "sendAmount",
+		"type": "uint256"
+	}],
+	"name": "NewTokenTransfered",
+	"type": "event"
+}, {
+	"anonymous": false,
+	"inputs": [{
+		"indexed": true,
+		"internalType": "address",
+		"name": "previousOwner",
+		"type": "address"
+	}, {
+		"indexed": true,
+		"internalType": "address",
+		"name": "newOwner",
+		"type": "address"
+	}],
+	"name": "OwnershipTransferred",
+	"type": "event"
+}, {
+	"inputs": [],
+	"name": "addedRate",
+	"outputs": [{
+		"internalType": "uint256",
+		"name": "",
+		"type": "uint256"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address",
+		"name": "account",
+		"type": "address"
+	}, {
+		"internalType": "bool",
+		"name": "isallowed",
+		"type": "bool"
+	}],
+	"name": "allowAccount",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address[]",
+		"name": "accounts",
+		"type": "address[]"
+	}, {
+		"internalType": "bool",
+		"name": "isallowed",
+		"type": "bool"
+	}],
+	"name": "allowMultipleAccounts",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+	}],
+	"name": "allowedusers",
+	"outputs": [{
+		"internalType": "bool",
+		"name": "",
+		"type": "bool"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address",
+		"name": "account",
+		"type": "address"
+	}],
+	"name": "canSwap",
+	"outputs": [{
+		"internalType": "bool",
+		"name": "",
+		"type": "bool"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "deadWallet",
+	"outputs": [{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "contract IBEP20",
+		"name": "token",
+		"type": "address"
+	}, {
+		"internalType": "uint256",
+		"name": "amount",
+		"type": "uint256"
+	}, {
+		"internalType": "address",
+		"name": "to",
+		"type": "address"
+	}],
+	"name": "drainBEP20Token",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "exchange",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address",
+		"name": "account",
+		"type": "address"
+	}],
+	"name": "isAllowed",
+	"outputs": [{
+		"internalType": "bool",
+		"name": "",
+		"type": "bool"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+	}],
+	"name": "lastSwap",
+	"outputs": [{
+		"internalType": "uint256",
+		"name": "",
+		"type": "uint256"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "newtoken",
+	"outputs": [{
+		"internalType": "contract IBEP20",
+		"name": "",
+		"type": "address"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "oldtoken",
+	"outputs": [{
+		"internalType": "contract IBEP20",
+		"name": "",
+		"type": "address"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "owner",
+	"outputs": [{
+		"internalType": "address",
+		"name": "",
+		"type": "address"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "renounceOwnership",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [],
+	"name": "timelimt",
+	"outputs": [{
+		"internalType": "uint256",
+		"name": "",
+		"type": "uint256"
+	}],
+	"stateMutability": "view",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "address",
+		"name": "newOwner",
+		"type": "address"
+	}],
+	"name": "transferOwnership",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "uint256",
+		"name": "newRate",
+		"type": "uint256"
+	}],
+	"name": "updateAddedRate",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "uint256",
+		"name": "newPeriod",
+		"type": "uint256"
+	}],
+	"name": "updateTimelimit",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}, {
+	"inputs": [{
+		"internalType": "contract IBEP20",
+		"name": "_oldtoken",
+		"type": "address"
+	}, {
+		"internalType": "contract IBEP20",
+		"name": "_newtoken",
+		"type": "address"
+	}],
+	"name": "updateTokens",
+	"outputs": [],
+	"stateMutability": "nonpayable",
+	"type": "function"
+}]

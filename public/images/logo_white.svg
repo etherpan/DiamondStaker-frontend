@@ -1,0 +1,91 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2397 656" width="300" height="82">
+	<title>43_Family</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="63.216" y1="108.597" x2="782.077" y2="108.597">
+			<stop offset="0" stop-color="#7548d6"  />
+			<stop offset="1" stop-color="#6320a6"  />
+		</linearGradient>
+		<linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="149.837" y1="32.655" x2="675.554" y2="32.655">
+			<stop offset="0" stop-color="#fe6df0"  />
+			<stop offset="1" stop-color="#5c15da"  />
+		</linearGradient>
+		<linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="109.742" y1="32.86" x2="670.234" y2="32.86">
+			<stop offset="0" stop-color="#c8bffe"  />
+			<stop offset="1" stop-color="#af8cfd"  />
+		</linearGradient>
+		<linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="311.019" y1="118.89" x2="609.367" y2="172.055">
+			<stop offset="0" stop-color="#fe6df0"  />
+			<stop offset="1" stop-color="#5c15da"  />
+		</linearGradient>
+		<linearGradient id="grd5" gradientUnits="userSpaceOnUse"  x1="304.417" y1="104.653" x2="607.29" y2="158.624">
+			<stop offset="0" stop-color="#c8bffe"  />
+			<stop offset="1" stop-color="#af8cfd"  />
+		</linearGradient>
+		<linearGradient id="grd6" gradientUnits="userSpaceOnUse"  x1="69.122" y1="172.852" x2="778.983" y2="172.852">
+			<stop offset="0" stop-color="#c1a6ff"  />
+			<stop offset="1" stop-color="#6818db"  />
+		</linearGradient>
+		<linearGradient id="grd7" gradientUnits="userSpaceOnUse"  x1="69.961" y1="173.403" x2="779.014" y2="173.403">
+			<stop offset="0" stop-color="#ded1ff"  />
+			<stop offset="1" stop-color="#6818db"  />
+		</linearGradient>
+		<linearGradient id="grd8" gradientUnits="userSpaceOnUse"  x1="106.906" y1="184.271" x2="688.531" y2="184.271">
+			<stop offset="0" stop-color="#9756fe"  />
+			<stop offset="1" stop-color="#a515da"  />
+		</linearGradient>
+		<linearGradient id="grd9" gradientUnits="userSpaceOnUse"  x1="279.323" y1="247.645" x2="580.116" y2="247.645">
+			<stop offset="0" stop-color="#fe6df0"  />
+			<stop offset="1" stop-color="#5c15da"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+		.shp1 { fill: url(#grd2) } 
+		.shp2 { opacity: 0.502;mix-blend-mode: multiply;fill: #9f7bb5 } 
+		.shp3 { opacity: 0.502;mix-blend-mode: screen;fill: url(#grd3) } 
+		.shp4 { fill: url(#grd4) } 
+		.shp5 { opacity: 0.502;mix-blend-mode: screen;fill: url(#grd5) } 
+		.shp6 { fill: url(#grd6) } 
+		.txt7 { font-size: 73px;fill: #ffffff;font-weight: bold;font-family: "Agency FB" } 
+		.shp8 { opacity: 0.6;mix-blend-mode: screen;fill: url(#grd7) } 
+		.shp9 { opacity: 0.502;fill: url(#grd8) } 
+		.shp10 { opacity: 0.502;fill: url(#grd9) } 
+		.txt11 { font-size: 600px;fill: #ffffff;font-family: "Agency FB" } 
+	</style>
+	<g id="BG">
+	</g>
+	<g id="graphics">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+			</g>
+		</g>
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+			</g>
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="shp0" d="M395.66 284.71C594.02 368.07 771.08 351.64 780.2 211.69L780.68 211.67C781.12 149.94 719.99 94.14 632.41 114.35C537.49 136.26 434.3 239.38 238.07 169.1C41.84 98.82 15.37 191.01 39.1 284.1C-2.88 81.48 211.37 207.26 395.66 284.71Z" />
+			<path id="&lt;Path&gt;" class="shp1" d="M412.7 105.24C267.59 -36.57 21.07 41.84 111.57 275.41C167.69 420.26 308.16 525.66 412.7 577.38C517.23 525.66 657.7 420.26 713.82 275.41C804.32 41.84 557.8 -36.57 412.7 105.24Z" />
+			<path id="&lt;Path&gt;" class="shp2" d="M699.05 308.75C677.56 311.31 656.47 312.12 635.74 311.52C697.22 195.54 571.01 132.22 477.86 195.62C420.36 115.17 305.27 117.51 289.86 207.19C221.84 179.42 156.94 157.62 93.45 160.01C92.47 167.98 92.02 176.3 92.17 184.98C148.83 272.77 358.83 432.1 430.56 461.05C511.5 444.1 639.5 373.44 684.5 335.7C689.66 326.9 694.51 317.91 699.05 308.75Z" />
+			<path id="&lt;Path&gt;" class="shp3" d="M713.82 275.41C783.12 50.95 580.81 -31.26 412.15 124.7C334.08 35.62 184.85 7.15 110.49 106.64C162.23 14.48 311.92 6.75 412.7 105.24C557.8 -36.57 804.32 41.84 713.82 275.41Z" />
+			<path id="&lt;Path&gt;" class="shp4" d="M461.2 192.29C393.83 98.03 247.39 117.42 274.86 257.79C291.9 344.85 360.31 418.17 413.9 457.71C477.84 439.11 567.37 393.93 613.43 318.12C687.7 195.88 556.97 127.1 461.2 192.29Z" />
+			<path id="&lt;Path&gt;" class="shp5" d="M613.43 318.12C674.88 198.88 567.45 142.32 457 213.1C426.83 153.44 342.93 114.32 291.16 162.81C329.48 116.18 414.41 126.83 461.2 192.29C556.97 127.1 687.7 195.88 613.43 318.12Z" />
+			<path id="&lt;Path&gt;" class="shp2" d="M584.82 356.01C595.49 344.35 605.16 331.73 613.43 318.12C617.06 312.15 620.19 306.31 622.87 300.61C496.11 289.47 383.19 228.1 277.46 187.36C270.99 205.57 269.37 228.49 274.56 256.17C316.72 279.59 361.42 303.73 405.46 322.24C468.65 348.8 530.11 358.98 584.82 356.01Z" />
+			<path id="&lt;Path&gt;" class="shp6" d="M39.35 284.05C42.92 297.5 47.67 311.52 53.71 326.08C119.37 484.58 283.7 599.89 406 656.48C528.3 599.89 692.64 484.58 758.3 326.08C776.14 283.01 782.79 244.76 780.68 211.67L780.2 211.69C771.08 351.64 594.02 368.07 395.66 284.71C211.37 207.26 -2.88 81.48 39.1 284.1L39.35 284.05Z" />
+			<text id="LOVE" style="transform: matrix(1.867,0.407,-0.43,1.974,319.427,316.769)" >
+				<tspan x="0" y="0" class="txt7">LOVE
+</tspan>
+			</text>
+			<path id="&lt;Path&gt;" class="shp8" d="M39.1 284.1C11.12 92.44 209.94 226.6 395.66 300.53C631.16 394.28 771.08 351.64 780.2 211.69C771.08 351.64 594.02 368.07 395.66 284.71C211.37 207.26 -2.88 81.48 39.1 284.1Z" />
+			<path id="&lt;Path&gt;" class="shp9" d="M395.66 300.53C287.17 257.35 174.22 193.61 104.61 186.27C97.51 218.18 104.34 263.59 121.02 303.83C175.38 435.06 311.44 530.53 412.7 577.38C503.16 535.52 626.23 449.25 689.33 338.77C623.45 362.14 523.69 351.5 395.66 300.53Z" />
+			<path id="&lt;Path&gt;" class="shp10" d="M395.66 300.53C356.72 285.03 317.2 266.88 279.32 249.64C298.51 333.69 364.72 404.21 416.9 442.71C466.66 428.24 531.91 397.65 580.12 349.06C527.78 344.35 465.98 328.53 395.66 300.53Z" />
+		</g>
+	</g>
+	<text id="Layer 2" style="transform: matrix(1,0,0,1,894.716,325.896)" >
+	</text>
+	<text id="LovePot" style="transform: matrix(1,0,0,1,864,631.997)" >
+		<tspan x="0" y="0" class="txt11">L</tspan><tspan  y="0" class="txt11">ovePot
+</tspan>
+	</text>
+</svg>
