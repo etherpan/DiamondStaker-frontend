@@ -11,6 +11,9 @@ import CardValue from './CardValue'
 
 
 const StyledCard = styled(Card)`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   margin: 15px 10px;
   margin-bottom: 0px;
   height: 153px;
@@ -22,6 +25,7 @@ const StyledCard = styled(Card)`
 `
 
 const StyledCardBody = styled(CardBody)`
+
   border-radius: 15px;
   height: 150px;
   max-width: 300px;

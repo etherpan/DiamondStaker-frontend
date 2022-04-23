@@ -8,158 +8,16 @@ import CopyAddress from 'components/Menu/UserMenu/CopyAddress'
 import { shortenAddress } from 'utils';
 import rot13 from '../../../utils/encode'
 
-const Wrapper = styled(Flex)`
-  z-index: 1;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-`
  const TextLavel = styled.div`
-  font-family: Roboto Condensed;
+  font-family: inter !important;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   padding: 5px;
+  weight: 400, regular;
  `
- const SocialsBox = styled.div`
- .effect {
-   width: 100%;
-   // padding: 50px 0px 70px 0px;
-   // background-color: #212121;
-   
-   h2 {
-     color: #fff;
-     font: {
-       family: 'Playfair Display', serif;
-       weight: 400;
-       size: 25px;
-     }
-     letter-spacing: 3px;
-   }
-   
-   &:nth-child(2) {
-     margin-top: 50px;
-   }
-   
-   &:nth-child(2n+1) {
-     // background-color: #fff;
-     
-     h2 {
-       color: #212121;
-     }
-   }
-   
-   &:nth-child(2n) {
-     
-     a {
-       color: #fff;
-       border-color: #fff;
-     }
-   }
-   
-   .buttons {
-     margin-top: 40px;
-     display: flex;
-     justify-content: center;
-   }
-
-   a {
-     text-decoration: none !important;
-     width: 50px;
-     height: 50px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     border-radius: 50%;
-     margin-right: 10px;
-     font-size: 22px;
-     overflow: hidden;
-     position: relative;
-     color: #fcd535; //or change to your own color
-     border: 2px solid #fcd535; //or change to your own color
-     transition: all 0.2s linear 0s;
-
-     i {
-       position: relative;
-       z-index: 3;
-     }
-     
-     &:last-child {
-       margin-right: 0px;
-     }
-     
-     &:before {
-       content: "";
-       display: inline-block;
-       height: 100%;
-       vertical-align: middle;
-     }
-     
-     i {
-       display: inline-block;
-       vertical-align: middle;
-     }
-
-     &:after {
-       content: "";
-       display: block;
-       width: 90%;
-       height: 90%;
-       top: -110%;
-       left: 0;
-       right: 0;
-       margin: auto;
-       position: absolute;
-       background-color: #212121;
-       border-radius: 50%;
-     }
-     
-     &:hover {
-       color: #fff;
-       
-       &:after {
-         top: 5%;
-         transition: all 0.2s linear 0s;
-       }
-     }
-   }      
- }
  
-
-/* varrius effect */
-.effect {
- a {
-   transition: all 0.2s linear 0s;
-   
-   &:after {
-     content: "";
-     display: block;
-     width: 90%;
-     height: 90%;
-     top: -110%;
-     left: 0;
-     right: 0;
-     margin: auto;
-     position: absolute;
-     background-color: #212121;
-     border-radius: 50%;
-   }
-   
-   &:hover {
-     color: #fff;
-     
-     &:after {
-       top: 5%;
-       transition: all 0.2s linear 0s;
-     }
-   }
- }
-}
-`
-
-const Hero = styled.div`
+ const Hero = styled.div`
   align-items: center;
   width: 100%;
   background-repeat: no-repeat;
@@ -176,6 +34,27 @@ const Hero = styled.div`
   }
 `
 
+const StyledCard = styled.div`
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 1.3rem;
+  margin-top: 3rem;
+  a {
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      transform: scale(1.1);
+    }
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+`
+
 const Footer = () => {
   const { t } = useTranslation()
   const { account } = useActiveWeb3React()
@@ -186,49 +65,35 @@ const Footer = () => {
         <Hero>
           {/* <Image src="images/header.png" width={400} height={237}/> */}
           <TextLavel style={{ fontSize: "28px", color: "white", margin: "auto" }}>
-            {t('Experimental Yield Farm on Binance Smart Chain')}
+            {t('Conditions Apply')}
           </TextLavel>
           <TextLavel style={{ marginTop: "40px" }}>
-            {t('- 0.01 BNB Min Investment')}
+            {t('- You cannot withdraw the initial')}
           </TextLavel>
           <TextLavel>
-            {t('- 10% Daily rewards')}
+            {t('- investment You will receive 10% daily for the 30 days')}
           </TextLavel>
           <TextLavel>
-            {t('- 20 Day 200% ROI')}
+            {t('- 0% of your withdrawal amount will be re-invested with its own 30 day period')}
           </TextLavel>
           <TextLavel>
-            {t('- 0.0035 BNB Minimum Withdrawal')}
+            {t('- There is a 10% deposit fee and 5% withdrawal fee')}
           </TextLavel>
           <TextLavel>
-            {t('- Withdraw Anytime')}
-          </TextLavel>
-          <TextLavel>
-            {t('- 100% availability : 70% withdraw 30% auto reinvested for sustainability and anti whale functions')}
-          </TextLavel>
-          <TextLavel>
-            {t('- 3 BNB max withdrawal per transaction')}
+            {t('- There is a 3 level referral system. If someone uses your referral link to visit the site and')}
           </TextLavel>
         </Hero>
-
-        <Flex flexDirection="column">
-          <Text color="primary" fontSize="20px" >{t('Referral Link')}</Text>
-          <CopyAddress account={referlink} mt="5px" style={{width: "fit-content"}} color="textSubtle"/>
-        </Flex>
-        <Flex flexDirection="column">
-          <Text color="primary" fontSize="20px" >{t('Contract')}</Text>
-          <LinkExternal href='https://bscscan.com/address/0x13f3bc9dd5c93e9a11779f269ca27fe890ed45d1#code' color="textSubtle" mt="12px" fontSize='16px'>{shortenAddress("0x13f3bc9dd5c93e9a11779f269ca27fe890ed45d1", 6)}</LinkExternal>
-          <LinkExternal href='https://acrobat.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3A7d3e6efd-b72f-3217-a4ad-4eaf27682a50#pageNum=1' color="textSubtle" mt="12px" fontSize='16px'>Audit Report</LinkExternal>
-          <a href='https://dappradar.com/binance-smart-chain/high-risk/bnb-multiplier' style={{marginTop: "8px"}} rel="noreferrer" target="_blank"><Image src="/images/dapp.svg" width={110} height={24} /> </a>
-          <a href='https://hazecrypto.net/audit/bnbmultiplier' style={{marginTop: "8px"}} rel="noreferrer" target="_blank"><Image src="/images/haze.png" width={124} height={24} /> </a>
-        </Flex>
-        <Flex flexDirection="column">
-          <Text color="primary" fontSize="20px" >{t('Socials')}</Text>
-          {/* <TelegramIcon /> */}
-          <a href="https://t.me/MyYieldFarm" target="_blank" rel="noreferrer" style={{marginTop: "10px"}}>
-            <Image src="/images/telegram.svg" width={24} height={24} />
+        <StyledCard>
+          <a href="https://t.me/MyYieldFarm" target="_blank" rel="noreferrer">
+            <img src="/images/logo_small.png" alt='logo_small' style={{height: "100px", width: "180px" }}/>
           </a>
-        </Flex>
+          <a href="https://t.me/MyYieldFarm" target="_blank" rel="noreferrer">
+            <img src="/images/twitter.png" alt='twitter'/>
+          </a>
+          <a href="https://t.me/MyYieldFarm" target="_blank" rel="noreferrer">
+            <img src="/images/telegram.png" alt='telegram'/>
+          </a>
+        </StyledCard>
         <TextLavel style={{ fontSize: "20px", color: "white", margin: "auto" }}>
             {t('© Copyright Diamond Staker . All Rights Reserved')}
         </TextLavel>

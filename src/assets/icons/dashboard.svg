@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>ticket-icon</title>
+	<defs>
+		<image  width="18" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAMAAAC3SZ14AAAAAXNSR0IB2cksfwAAARRQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////rH78GQAAAFx0Uk5TAAxgCBnA/p3a/wA/5tvd/WkDOkv2fjQrZvMnpdlPwe1HcrsQvHuu1xOZ+o8s0sZa6KwNs3kx57c4ASX1YkjTjVf78TVk3xbFHQaQug8Soch9JqaGtPRucepG8F5IfoGnAAAAzElEQVR4nGNggANGJmYGVMDCysaOJsLBycmKLMDFzcPJy8cvIIgqIiTMJyIqJg4VkZDkZJWSlpGV4+SXVwCLKHJyKimrcHKqqnFyqmuALNfk1NLW0eXk5NTTNzA0AooYGXNqmZiacYKAuYWRJQODFSuntY2tAScEGNjZCzI4ODo5u7BxwoGrGwODs7gJkoi7B9AsTy8kEW8foIivNJKIH0iEwR8hwBkAcXlgUHCII1ggNAzhZ8FwkEhEJHI4MPKjizD4RkEsRwbR5kgiALXvGIQFhCiSAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="1" y="0"/>
+</svg>

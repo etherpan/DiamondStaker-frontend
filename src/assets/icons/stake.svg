@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>stake-svg</title>
+	<defs>
+		<image  width="17" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARBAMAAADJQ1rJAAAAAXNSR0IB2cksfwAAADBQTFRFAAAA+vr6+/v7/Pz8/v7+/v7+/v7+/f397+/v+/v7/f39/v7+/Pz8/f39/f39/v7+4so9IwAAABB0Uk5TADA/YO//8IAQQJC/UHB/wGxiOlwAAABiSURBVHicY2BgVAIBAQYGZtdQEAgxYGCrYACBdgcG0QYwizOAYSrD6t27d+8Cs46Xl5fXgFkIWQTrNlDdXjDLHKiuGKe6c+/eNUBY6///PwBiIWxjewR2lV4CA3Mq2FVhBgA43icC7eWsQQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="1" y="1"/>
+</svg>
