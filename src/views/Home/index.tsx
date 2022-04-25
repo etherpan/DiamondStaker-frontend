@@ -4,19 +4,16 @@ import Cookies from 'universal-cookie';
 import { useQueryParam, StringParam } from 'use-query-params';
 import PageSection from 'components/PageSection'
 import { Text, Image, Flex, Heading } from '@pancakeswap/uikit'
-import { TokenUpdater } from 'state/info/updaters'
 import Page from 'components/Layout/Page'
-
-import CurrentStatus from 'views/Home/components/CurrentStatus'
-import ButtonGroup from 'views/Home/components/ButtonGroup'
 import About from 'views/Home/components/About'
 import Footer from 'views/Home/components/Footer'
 import Referral from 'views/Home/components/Referral'
 import YourAccount from 'views/Home/components/YourAccount'
 import { useTranslation } from 'contexts/Localization'
 import { isAddress } from '../../utils/web3'
-import rot13 from '../../utils/encode'
-import CakeDataRow from './components/CakeDataRow';
+import CakeDataRow from './components/CakeDataRow'
+import StakeCard from './components/StakeCard'
+import config from './config'
 
 const StyledHeroSection = styled(PageSection)`
   background-image: url('images/bg.jpg');
@@ -45,67 +42,58 @@ const Hero = styled.div`
 `
 
 const TextLavel = styled.div`
-font-family: inter !important;
-text-align: center;
-font-size: 20px;
-color: #fff;
-padding: 5px;
-weight: 400, regular;
+  font-family: inter !important;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px;
+  weight: 400, regular;
+`
+
+const AccountStyle = styled.div`
+  background: #1F09AC;
+  font-size: 26px;
+  font-family: inter !important;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
 `
 
 const Home: React.FC = () => {
   
   const { t } = useTranslation()
-  const cookies = new Cookies();
-  const [ref, setNum] = useQueryParam('ref', StringParam);
-
-  if(ref) {
-    if(isAddress(rot13(ref))) {
-      cookies.set("ref", ref)
-    }
-  }
 
   return (
     <>
-      <div>
-        <Page>
+      <div style={{ background: "#3C20E9" }}>
+        <Page style={{ background: "#3C20E9" }}>
           <Flex alignItems="center" justifyContent="center">
-            <div style={{width: "100%"}}>
-              <Hero>
-                {/* <Image src="images/header.png" width={400} height={237}/> */}
-                <TextLavel style={{ fontSize: "28px", color: "white", margin: "auto" }}>
+            <div >
+              <Hero style={{ marginBottom: "20px" }}>
+                <TextLavel style={{ fontSize: "28px", color: "white", marginLeft: "auto", marginRight: "auto", marginBottom: "20px" }}>
                   {t('Make a New Investment & Start Earning Daily')}
                 </TextLavel>
                 <TextLavel >
-                  {t('- 0.01 BNB Min Investment')}
-                </TextLavel>
-                <TextLavel >
-                  {t('- 10% Daily rewards')}
-                </TextLavel>
-                <TextLavel >
-                  {t(' 20 Day 200% ROI')}
-                </TextLavel>
-                <TextLavel >
-                  {t('- 0.0035 BNB Minimum Withdrawal')}
-                </TextLavel>
-                <TextLavel >
-                  {t('- Withdraw Anytime')}
-                </TextLavel>
-                <TextLavel >
-                  {t('- 100% availability : 70% withdraw 30% auto reinvested for sustainability and anti whale functions')}
+                  {t('10% Daily for 30 days')}
                 </TextLavel>
                 <TextLavel>
-                  {t('- 3 BNB max withdrawal per transaction')}
+                  {t('30% Auto Reinvestment on Withdrawal')}
+                </TextLavel>
+                <TextLavel >
+                  {t('3 Level Referral System')}
                 </TextLavel>
               </Hero>
-              <TokenUpdater />
-              <CurrentStatus />
-              <ButtonGroup />
+              <StakeCard header={t('Invest BNB')} config={config(t)} m="auto" />
             </div>
           </Flex>
         </Page>
       </div>
       <div style={{ background: "#fff" }}>
+        <AccountStyle>
+          Your Account
+        </AccountStyle>
         <Page style={{ background: "#fff" }}>
           <YourAccount/>
         </Page>

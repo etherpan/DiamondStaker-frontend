@@ -113,7 +113,6 @@ const Dice: React.FC = () => {
     <>
       <Page>
         <Hero />
-        
         <Box style={{maxWidth: "400px", margin: "auto", marginBottom: "32px"}}>
           <Card>
             {pendingTx && <Loading />}

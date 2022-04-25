@@ -46,9 +46,9 @@ const StyledTokenInput = styled.div<InputProps>`
 
 const InputLayout = styled(Input)`
   box-shadow: none;
-  border-radius: 20px;
+  border-radius: 5px;
   border: 2px solid #3c3742;
-  background: #000015;
+  background: #FFFFFF;
 `
 
 
@@ -114,7 +114,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
           <Text fontSize="14px">{symbol}</Text>
           <Text fontSize="14px">{t('Balance: %balance%', { balance: displayBalance(max) })}</Text>
         </Flex>
-        <Flex alignItems="flex-end" justifyContent="space-around" style={{background: "#000015"}}>
+        <Flex alignItems="flex-end" justifyContent="space-around">
           <InputLayout
             pattern={`^[0-9]*[.,]?[0-9]{0,${decimals}}$`}
             inputMode="decimal"
@@ -124,10 +124,9 @@ const ModalInput: React.FC<ModalInputProps> = ({
             placeholder="0"
             value={value}
           />
-          <Button scale="sm" onClick={onSelectMax} style={{color:'#fff', height: "40px", background: "none", borderRadius: "15px", border: "2px solid #3c3742"}}>
+          <Button scale="sm" onClick={onSelectMax} style={{color:'#fff', height: "40px", background: "none", borderRadius: "5px", border: "0.5px solid #fff", marginLeft: "5px" }}>
             {t('Max')}
           </Button>
-          
         </Flex>
         <Flex justifyContent="center" mt="32px">
           <Button
@@ -135,7 +134,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
               width="200px"
               height="45px"
               mb="12px"
-              style={{color:'#fff', borderRadius: "22px"}}
+              style={{color:'#fff', borderRadius: "5px"}}
               disabled={
                 pendingTx || !StakeAmount.isFinite() || StakeAmount.eq(0) || StakeAmount.gt(max) || isBalanceZero || StakeAmount.lt(0.01)
               }

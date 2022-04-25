@@ -32,6 +32,7 @@ const UserMenu = () => {
   const hasProfile = isInitialized && !!profile
   const avatarSrc = profile && profile.nft ? `/images/nfts/${profile.nft.images.sm}` : undefined
   const hasLowBnbBalance = fetchStatus === FetchStatus.SUCCESS && balance.lte(LOW_BNB_BALANCE)
+  
   const StyledLink = styled(Link)`
     height: 100%;
     width: 100%;
@@ -43,7 +44,7 @@ const UserMenu = () => {
   margin-left: 5px;
   height: 36px;
   padding: 0;
-  min-width: 120px !important;
+  max-width: 140px !important;
   margin: auto;
   border-radius: 5px;
   @media (max-width: 742px) {
@@ -61,35 +62,47 @@ const UserMenu = () => {
   ${({ theme }) => theme.mediaQueries.md} {
     width: 240px;
   }
-`;
+`
 
   if (!account) {
     return (
     <>
-      <BlockButton mr="16px" href="/invest" style={{width: "100px"}}>
-        <Text color="background" style={{fontSize: "20px", color: "white"}}>Whitepaper</Text>
+      <BlockButton>
+        <a href="https://gitbook.diamond.com"  target="_blank" rel="noreferrer">
+          <Text style={{fontSize: "20px", color: "white"}}>WhitePater</Text>
+        </a>
       </BlockButton>
-      <BlockButton mr="16px" href="/dice" style={{width: "100px"}}>
-        <Text color="background" style={{fontSize: "20px", color: "white"}}>Audit</Text>
+      <BlockButton>
+        <a href="https://acrobat.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3A7d3e6efd-b72f-3217-a4ad-4eaf27682a50#pageNum=1"  target="_blank" rel="noreferrer">
+          <Text color="background" style={{fontSize: "20px", color: "white"}}>Audit</Text>
+        </a>
       </BlockButton>
-      <BlockButton mr="16px" href="/dice" style={{width: "100px"}}>
-        <Text color="background" style={{fontSize: "20px", color: "white"}}>Contract</Text>
+      <BlockButton>
+        <a href="https://bscscan.com/address/0x47c9A278f6a482b0C033A646e9DD2DD52a9EFF20"  target="_blank" rel="noreferrer">
+          <Text color="background" style={{fontSize: "20px", color: "white"}}>Contract</Text>
+        </a>
       </BlockButton>
-      <ConnectWalletButton scale="sm" />
+      <ConnectWalletButton scale="sm"/>
     </>
     )
   }
 
   return (
     <>
-      <BlockButton mr="16px" href="/invest" style={{width: "100px"}}>
-        <Text color="background" style={{fontSize: "20px", color: "white"}}>Whitepaper</Text>
+      <BlockButton>
+        <a href="https://gitbook.diamond.com"  target="_blank" rel="noreferrer">
+          <Text style={{fontSize: "20px", color: "white"}}>WhitePater</Text>
+        </a>
       </BlockButton>
-      <BlockButton mr="16px" href="/dice" style={{width: "100px"}}>
-        <Text color="background" style={{fontSize: "20px", color: "white"}}>Audit</Text>
+      <BlockButton>
+        <a href="https://acrobat.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3A7d3e6efd-b72f-3217-a4ad-4eaf27682a50#pageNum=1"  target="_blank" rel="noreferrer">
+          <Text color="background" style={{fontSize: "20px", color: "white"}}>Audit</Text>
+        </a>
       </BlockButton>
-      <BlockButton mr="16px" href="/dice" style={{width: "100px"}}>
-        <Text color="background" style={{fontSize: "20px", color: "white"}}>Contract</Text>
+      <BlockButton>
+        <a href="https://bscscan.com/address/0x47c9A278f6a482b0C033A646e9DD2DD52a9EFF20"  target="_blank" rel="noreferrer">
+          <Text color="background" style={{fontSize: "20px", color: "white"}}>Contract</Text>
+        </a>
       </BlockButton>
       <UIKitUserMenu account={account} avatarSrc={avatarSrc}>
         <WalletUserMenuItem hasLowBnbBalance={hasLowBnbBalance} onPresentWalletModal={onPresentWalletModal} />

@@ -11,7 +11,6 @@ import CardValue from './CardValue'
 
 
 const StyledCard = styled(Card)`
-  display: flex;
   justify-content: center;
   flex-direction: row;
   margin: 15px 10px;
@@ -32,7 +31,7 @@ const StyledCardBody = styled(CardBody)`
 `
 
 const StyleGrid = styled(Grid)`
-  max-width: 300px;
+  max-width: 800px;
   margin: auto;
   margin-bottom: 30px;
   ${({ theme }) => theme.mediaQueries.md} {
