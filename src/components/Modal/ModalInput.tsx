@@ -92,6 +92,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
 
   const handleStake = async () => {
     const vaule = StakeAmount.times(10**18).toString()
+    console.log('value', value)
     try {
       const tx = await callWithGasPrice(morebnbContract, 'deposit', [ref], {value: vaule})
       setPendingTx(true)
@@ -123,6 +124,7 @@ const ModalInput: React.FC<ModalInputProps> = ({
             onChange={onChange}
             placeholder="0"
             value={value}
+            style={{color:'#000'}}
           />
           <Button scale="sm" onClick={onSelectMax} style={{color:'#fff', height: "40px", background: "none", borderRadius: "5px", border: "0.5px solid #fff", marginLeft: "5px" }}>
             {t('Max')}

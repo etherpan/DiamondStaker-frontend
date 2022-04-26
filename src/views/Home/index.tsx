@@ -85,7 +85,7 @@ const Home: React.FC = () => {
                   {t('3 Level Referral System')}
                 </TextLavel>
               </Hero>
-              <StakeCard header={t('Invest BNB')} config={config(t)} m="auto" />
+              <StakeCard header={t('Invest BNB')} config={config(t)} m="auto"/>
             </div>
           </Flex>
         </Page>
