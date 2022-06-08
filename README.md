@@ -13,5 +13,5 @@ https://www.figma.com/file/5a1s4MmuSlQhwyPoKlL0Y1/DiamondStaker-theme?node-id=0%
 https://twitter.com/diamond_staker<br/>
 https://t.me/diamondstakerfinance
 
-## pancake frontend
+
 
